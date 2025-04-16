@@ -94,11 +94,11 @@ struct ProductListView: View {
                                     
                                     if !viewModel.favoriteProducts.isEmpty {
                                         Text("\(viewModel.favoriteProducts.count)")
-                                            .font(.system(size: 10, weight: .bold))
+                                            .font(.system(size: 12, weight: .bold))
                                             .foregroundColor(.white)
                                             .padding(4)
                                             .background(Circle().fill(Color.black))
-                                            .offset(x: 6, y: -6)
+                                            .offset(x: 8, y: -8)
                                     }
                                 }
                                 .padding(12)
@@ -119,7 +119,7 @@ struct ProductListView: View {
                             // ❤️ Favorites Section
                             if showFavorites, !viewModel.favoriteProducts.isEmpty {
                                 VStack(alignment: .leading, spacing: 12) {
-                                    Text("YOUR FAVORITES")
+                                    Text("FAVORITES")
                                         .font(.system(size: 14, weight: .bold))
                                         .foregroundColor(.white.opacity(0.8))
                                         .padding(.horizontal, 16)
